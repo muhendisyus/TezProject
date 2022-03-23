@@ -12,6 +12,7 @@ namespace BitirmeProjesi.Controllers
         public ActionResult Index()
         {
             return View();
+            //Hello
         }
     }
 }
