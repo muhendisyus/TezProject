@@ -100,5 +100,6 @@ namespace BitirmeProjesi.Controllers
             c.SaveChanges();
             return RedirectToAction("AYTDenemeListele");
         }
+        //Deneme
     }
 }
