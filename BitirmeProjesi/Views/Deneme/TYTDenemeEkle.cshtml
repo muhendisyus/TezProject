@@ -1,0 +1,108 @@
+﻿@model BitirmeProjesi.Models.Sınıflar.TYTDeneme
+@{
+    ViewBag.Title = "TYTDenemeEkle";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+<script src="~/Scripts/jquery-3.4.1.js"></script>
+<title>TYT Deneme Sonucu Ekle</title>
+<div style="background-color: white; border-radius: 5px; margin-top: 30px; margin-left:60px; margin-right:60px ">
+    <p style="text-align: center; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans- serif; font-size: 20px; color: #8789FF;margin-top:14px; ">
+        TYT Deneme Sonucu Ekle
+    </p>
+</div>
+<form method="post">
+    <br />
+    <div style="margin-left:60px;background-color:white; width:550px; height:450px;">
+        <br />
+        <div style="width:450px;height:350px;margin-left:50px;">
+            <div style="margin-top:5px;">
+                <p style="font-family:Corbel;font-size:20px;margin-left:50px;">
+                    Türkçe Net
+                    <div style="margin-left:50px; margin-right:50px; margin-top:-5px;">
+                        @Html.TextBoxFor(x => x.TurkNet, new { @class = "form-control", @placeholder = "0,00" })
+                    </div>
+                </p>
+            </div>
+
+            <div style="margin-top:5px;">
+                <p style="font-family:Corbel;font-size:20px;margin-left:50px;">
+                    Sosyal Net Net
+                    <div style="margin-left:50px; margin-right:50px; margin-top:-5px;">
+                        @Html.TextBoxFor(x => x.SosNet, new { @class = "form-control", @placeholder = "0,00" })
+                    </div>
+                </p>
+            </div>
+            <div style="margin-top:5px;">
+                <p style="font-family:Corbel;font-size:20px;margin-left:50px;">
+                    Matematik Net
+                    <div style="margin-left:50px; margin-right:50px; margin-top:-5px;">
+                        @Html.TextBoxFor(x => x.MatNet, new { @class = "form-control", @placeholder = "0,00" })
+                    </div>
+                </p>
+            </div>
+            <div style="margin-top:5px;">
+                <p style="font-family:Corbel;font-size:20px;margin-left:50px;">
+                    Fen Net
+                    <div style="margin-left:50px; margin-right:50px; margin-top:-5px;">
+                        @Html.TextBoxFor(x => x.FenNet, new { @class = "form-control", @placeholder = "0,00" })
+                    </div>
+                </p>
+            </div>
+
+
+        </div>
+    </div>
+    @*Sağ Kısım*@
+    <div class="form-group" style="margin-left:660px;margin-top:-450px; background-color:white; width:550px; height:450px;">
+        <br />
+        <div style="width:450px;height:350px;margin-left:50px;">
+            <div style="margin-top:5px;">
+                <p style="font-family:Corbel;font-size:20px;margin-left:50px;">
+                    Toplam Net
+                    <div style="margin-left:50px; margin-right:50px; margin-top:-5px;">
+                        @Html.TextBoxFor(x => x.TopNet, new { @class = "form-control"})
+                    </div>
+                </p>
+            </div>
+
+            <div style="margin-top:5px;">
+                <p style="font-family:Corbel;font-size:20px;margin-left:50px;">
+                    Puan
+                    <div style="margin-left:50px; margin-right:50px; margin-top:-5px;">
+                        @Html.TextBoxFor(x => x.Puan, new { @class = "form-control", @placeholder = "000,00" })
+                    </div>
+                </p>
+            </div>
+            <div style="margin-top:5px;">
+                <p style="font-family:Corbel;font-size:20px;margin-left:50px;">
+                    Yayın
+                    <div style="margin-left:50px; margin-right:50px; margin-top:-5px;">
+                        @Html.TextBoxFor(x => x.Yayın, new { @class = "form-control", @placeholder = "Örnek: Final" })
+                    </div>
+                </p>
+            </div>
+            <div style="margin-top:5px;">
+                <p style="font-family:Corbel;font-size:20px;margin-left:50px;">
+                    Tarih
+                    <div style="margin-left:50px; margin-right:50px; margin-top:-5px;">
+                        @Html.TextBoxFor(x => x.Tarih, new { type = "date" ,@class="form-control"})
+                    </div>
+                </p>
+            </div>
+
+
+        </div>
+    </div>
+    <br />
+    <div style="text-align:center">
+        <a class="btn rounded-pill btn-outline-dark" style="width:125px; height:40px;" href="/Deneme/TYTDenemeListele/">GERİ</a>
+        <button class="btn rounded-pill btn-outline-success" style="width:125px; height:40px;">EKLE</button>
+    </div>
+    <br />
+</form>
+<script>
+    $('SosNet').change(function () {
+        $('TurkNet').text('TopNet');
+    }
+});
+</script>

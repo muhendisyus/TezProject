@@ -1,0 +1,330 @@
+﻿
+@{
+    ViewBag.Title = "TYTistatistigi";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<title>TYT Dersleri İstatistiği</title>
+<div style="background-color: white; border-radius: 5px; margin-top: 30px; margin-left:60px; margin-right:100px ">
+    <p style="text-align: center; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans- serif; font-size: 20px; color: #8789FF;margin-top:14px; ">
+        TYT Dersleri İstatistiği
+    </p>
+</div>
+    <link rel="stylesheet" href="~/Web2/assets/vendor/css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="~/Web2/assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
+    <script src="~/Web2/assets/vendor/js/bootstrap.js"></script>
+
+    <div class="row" style="margin-top:30px; margin-left:50px;margin-right:50px;">
+        <div class="col-lg-6 col-md-12 col-6 mb-4" style="width:225px;height:250px;">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title d-flex align-items-start justify-content-between">
+                        <div class="avatar flex-shrink-0">
+                            <img src="~/Web2/assets/img/icons/unicons/TYT/turkce.png"
+                                 alt="chart success"
+                                 class="rounded" />
+                        </div>
+
+                    </div>
+                    <span class="fw-semibold d-block mb-1">Türkçe</span>
+                    <h3 class="card-title mb-2">% @ViewBag.ttr</h3>
+
+                    <div style="background-color: #E3F8D7; width: 65px; height: 40px; margin-left: 5px;">
+                        <p style="text-align:center;font-size:24px;">@ViewBag.tbit</p>
+                    </div>
+                    <div style="background-color: #FFD8D2; width: 65px; height: 40px; margin-left: 85px; margin-top: -40px;">
+                        <p style="text-align:center;font-family:Arial;font-size:24px;">@ViewBag.tkal</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12 col-6 mb-4" style="width:225px;height:250px;">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title d-flex align-items-start justify-content-between">
+                        <div class="avatar flex-shrink-0">
+                            <img src="~/Web2/assets/img/icons/unicons/TYT/mat.png"
+                                 alt="chart success"
+                                 class="rounded" />
+                        </div>
+
+                    </div>
+                    <span class="fw-semibold d-block mb-1">Matematik</span>
+                    <h3 class="card-title mb-2">% @ViewBag.mtr</h3>
+
+                    <div style="background-color: #E3F8D7; width: 65px; height: 40px; margin-left: 5px;">
+                        <p style="text-align:center;font-family:Arial;font-size:24px;">@ViewBag.mbit</p>
+                    </div>
+                    <div style="background-color: #FFD8D2; width: 65px; height: 40px; margin-left: 85px; margin-top: -40px;">
+                        <p style="text-align:center;font-family:Arial;font-size:24px;">@ViewBag.mkal</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12 col-6 mb-4" style="width:225px;height:250px;">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title d-flex align-items-start justify-content-between">
+                        <div class="avatar flex-shrink-0">
+                            <img src="~/Web2/assets/img/icons/unicons/TYT/geo.png"
+                                 alt="chart success"
+                                 class="rounded" />
+                        </div>
+
+                    </div>
+                    <span class="fw-semibold d-block mb-1">Geometri</span>
+                    <h3 class="card-title mb-2">% @ViewBag.gtr</h3>
+
+                    <div style="background-color: #E3F8D7; width: 65px; height: 40px; margin-left: 5px;">
+                        <p style="text-align:center;font-family:Arial;font-size:24px;">@ViewBag.gbit</p>
+                    </div>
+                    <div style="background-color: #FFD8D2; width: 65px; height: 40px; margin-left: 85px; margin-top: -40px;">
+                        <p style="text-align:center;font-family:Arial;font-size:24px;">@ViewBag.gkal</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12 col-6 mb-4" style="width:225px;height:250px;">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title d-flex align-items-start justify-content-between">
+                        <div class="avatar flex-shrink-0">
+                            <img src="~/Web2/assets/img/icons/unicons/TYT/fiz.png"
+                                 alt="chart success"
+                                 class="rounded" />
+                        </div>
+
+                    </div>
+                    <span class="fw-semibold d-block mb-1">Fizik</span>
+                    <h3 class="card-title mb-2">% @ViewBag.ftr</h3>
+
+                    <div style="background-color: #E3F8D7; width: 65px; height: 40px; margin-left: 5px;">
+                        <p style="text-align:center;font-family:Arial;font-size:24px;">@ViewBag.fbit</p>
+                    </div>
+                    <div style="background-color: #FFD8D2; width: 65px; height: 40px; margin-left: 85px; margin-top: -40px;">
+                        <p style="text-align:center;font-family:Arial;font-size:24px;">@ViewBag.fkal</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12 col-6 mb-4" style="width:225px;height:250px;">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title d-flex align-items-start justify-content-between">
+                        <div class="avatar flex-shrink-0">
+                            <img src="~/Web2/assets/img/icons/unicons/TYT/kim.png"
+                                 alt="chart success"
+                                 class="rounded" />
+                        </div>
+
+                    </div>
+                    <span class="fw-semibold d-block mb-1">Kimya</span>
+                    <h3 class="card-title mb-2">% @ViewBag.ktr</h3>
+
+                    <div style="background-color: #E3F8D7; width: 65px; height: 40px; margin-left: 5px;">
+                        <p style="text-align:center;font-family:Arial;font-size:24px;">@ViewBag.kbit</p>
+                    </div>
+                    <div style="background-color: #FFD8D2; width: 65px; height: 40px; margin-left: 85px; margin-top: -40px;">
+                        <p style="text-align:center;font-family:Arial;font-size:24px;">@ViewBag.kkal</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12 col-6 mb-4" style="width:225px;height:250px;">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title d-flex align-items-start justify-content-between">
+                        <div class="avatar flex-shrink-0">
+                            <img src="~/Web2/assets/img/icons/unicons/TYT/biyo.png"
+                                 alt="chart success"
+                                 class="rounded" />
+                        </div>
+
+                    </div>
+                    <span class="fw-semibold d-block mb-1">Biyoloji</span>
+                    <h3 class="card-title mb-2">@ViewBag.btr</h3>
+
+                    <div style="background-color: #E3F8D7; width: 65px; height: 40px; margin-left: 5px;">
+                        <p style="text-align:center;font-family:Arial;font-size:24px;">@ViewBag.bbit</p>
+                    </div>
+                    <div style="background-color: #FFD8D2; width: 65px; height: 40px; margin-left: 85px; margin-top: -40px;">
+                        <p style="text-align:center;font-family:Arial;font-size:24px;">@ViewBag.bkal</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12 col-6 mb-4" style="width:225px;height:250px;">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title d-flex align-items-start justify-content-between">
+                        <div class="avatar flex-shrink-0">
+                            <img src="~/Web2/assets/img/icons/unicons/TYT/tar.png"
+                                 alt="chart success"
+                                 class="rounded" />
+                        </div>
+
+                    </div>
+                    <span class="fw-semibold d-block mb-1">Tarih</span>
+                    <h3 class="card-title mb-2">% @ViewBag.tttr</h3>
+
+                    <div style="background-color: #E3F8D7; width: 65px; height: 40px; margin-left: 5px;">
+                        <p style="text-align:center;font-family:Arial;font-size:24px;">@ViewBag.ttbit</p>
+                    </div>
+                    <div style="background-color: #FFD8D2; width: 65px; height: 40px; margin-left: 85px; margin-top: -40px;">
+                        <p style="text-align:center;font-family:Arial;font-size:24px;">@ViewBag.ttkal</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12 col-6 mb-4" style="width:225px;height:250px;">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title d-flex align-items-start justify-content-between">
+                        <div class="avatar flex-shrink-0">
+                            <img src="~/Web2/assets/img/icons/unicons/TYT/cog.png"
+                                 alt="chart success"
+                                 class="rounded" />
+                        </div>
+
+                    </div>
+                    <span class="fw-semibold d-block mb-1">Coğrafya</span>
+                    <h3 class="card-title mb-2">% @ViewBag.ctr</h3>
+
+                    <div style="background-color: #E3F8D7; width: 65px; height: 40px; margin-left: 5px;">
+                        <p style="text-align:center;font-family:Arial;font-size:24px;">@ViewBag.cbit</p>
+                    </div>
+                    <div style="background-color: #FFD8D2; width: 65px; height: 40px; margin-left: 85px; margin-top: -40px;">
+                        <p style="text-align:center;font-family:Arial;font-size:24px;">@ViewBag.ckal</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12 col-6 mb-4" style="width:225px;height:250px;">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title d-flex align-items-start justify-content-between">
+                        <div class="avatar flex-shrink-0">
+                            <img src="~/Web2/assets/img/icons/unicons/TYT/din.png"
+                                 alt="chart success"
+                                 class="rounded" />
+                        </div>
+
+                    </div>
+                    <span class="fw-semibold d-block mb-1">Din Kültürü</span>
+                    <h3 class="card-title mb-2">% @ViewBag.dtr</h3>
+
+                    <div style="background-color: #E3F8D7; width: 65px; height: 40px; margin-left: 5px;">
+                        <p style="text-align:center;font-family:Arial;font-size:24px;">@ViewBag.dbit</p>
+                    </div>
+                    <div style="background-color: #FFD8D2; width: 65px; height: 40px; margin-left: 85px; margin-top: -40px;">
+                        <p style="text-align:center;font-family:Arial;font-size:24px;">@ViewBag.dkal</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12 col-6 mb-4" style="width:225px;height:250px;">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title d-flex align-items-start justify-content-between">
+                        <div class="avatar flex-shrink-0">
+                            <img src="~/Web2/assets/img/icons/unicons/TYT/fel.png"
+                                 alt="chart success"
+                                 class="rounded" />
+                        </div>
+
+                    </div>
+                    <span class="fw-semibold d-block mb-1">Felsefe</span>
+                    <h3 class="card-title mb-2">@ViewBag.fftr</h3>
+
+                    <div style="background-color: #E3F8D7; width: 65px; height: 40px; margin-left: 5px;">
+                        <p style="text-align:center;font-family:Arial;font-size:24px;">@ViewBag.ffbit</p>
+                    </div>
+                    <div style="background-color: #FFD8D2; width: 65px; height: 40px; margin-left: 85px; margin-top: -40px;">
+                        <p style="text-align:center;font-family:Arial;font-size:24px;">@ViewBag.ffkal</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12 col-6 mb-4" style="width:375px;height:250px;">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title d-flex align-items-start justify-content-between">
+                        <div class="avatar flex-shrink-0">
+                            <img src="~/Web2/assets/img/icons/unicons/TYT/SAY.png"
+                                 alt="chart success"
+                                 class="rounded" />
+                        </div>
+
+                    </div>
+                    <span class="fw-semibold d-block mb-1">Sayısal Dersleri</span>
+                    <h3 class="card-title mb-2">% @ViewBag.say</h3>
+
+                    <div style="background-color: #E3F8D7; width: 125px; height: 40px; margin-left: 5px;">
+                        <p style="text-align:center;font-family:Arial;font-size:24px;">@ViewBag.saybit</p>
+                    </div>
+                    <div style="background-color: #FFD8D2; width: 125px; height: 40px; margin-left: 160px; margin-top: -40px;">
+                        <p style="text-align:center;font-family:Arial;font-size:24px;">@ViewBag.saykal</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12 col-6 mb-4" style="width:375px;height:250px;">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title d-flex align-items-start justify-content-between">
+                        <div class="avatar flex-shrink-0">
+                            <img src="~/Web2/assets/img/icons/unicons/TYT/EA.png"
+                                 alt="chart success"
+                                 class="rounded" />
+                        </div>
+
+                    </div>
+                    <span class="fw-semibold d-block mb-1">Eşit Ağırlık Dersleri</span>
+                    <h3 class="card-title mb-2">% @ViewBag.ea</h3>
+
+                    <div style="background-color: #E3F8D7; width: 125px; height: 40px; margin-left: 5px;">
+                        <p style="text-align:center;font-family:Arial;font-size:24px;">@ViewBag.eabit</p>
+                    </div>
+                    <div style="background-color: #FFD8D2; width: 125px; height: 40px; margin-left: 160px; margin-top: -40px;">
+                        <p style="text-align:center;font-family:Arial;font-size:24px;">@ViewBag.eakal</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12 col-6 mb-4" style="width:375px;height:250px;">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title d-flex align-items-start justify-content-between">
+                        <div class="avatar flex-shrink-0">
+                            <img src="~/Web2/assets/img/icons/unicons/TYT/SÖZ.png"
+                                 alt="chart success"
+                                 class="rounded" />
+                        </div>
+
+                    </div>
+                    <span class="fw-semibold d-block mb-1">Sözel Dersleri</span>
+                    <h3 class="card-title mb-2">% @ViewBag.soz</h3>
+
+                    <div style="background-color: #E3F8D7; width: 125px; height: 40px; margin-left: 5px;">
+                        <p style="text-align:center;font-family:Arial;font-size:24px;">@ViewBag.sozbit</p>
+                    </div>
+                    <div style="background-color: #FFD8D2; width: 125px; height: 40px; margin-left: 160px; margin-top: -40px;">
+                        <p style="text-align:center;font-family:Arial;font-size:24px;">@ViewBag.sozkal</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
