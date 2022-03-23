@@ -227,14 +227,22 @@
     <Content Include="Web2\assets\img\icons\unicons\TYT\din.png" />
     <Content Include="Web2\assets\img\icons\unicons\TYT\EA.png" />
     <Content Include="Web2\assets\img\icons\unicons\TYT\fel.png" />
+    <Content Include="Web2\assets\img\icons\unicons\TYT\FEN.png" />
     <Content Include="Web2\assets\img\icons\unicons\TYT\fiz.png" />
     <Content Include="Web2\assets\img\icons\unicons\TYT\geo.png" />
     <Content Include="Web2\assets\img\icons\unicons\TYT\kim.png" />
     <Content Include="Web2\assets\img\icons\unicons\TYT\mat.png" />
+    <Content Include="Web2\assets\img\icons\unicons\TYT\MATT.png" />
+    <Content Include="Web2\assets\img\icons\unicons\TYT\net.png" />
+    <Content Include="Web2\assets\img\icons\unicons\TYT\netsayisi.png" />
+    <Content Include="Web2\assets\img\icons\unicons\TYT\puan.png" />
     <Content Include="Web2\assets\img\icons\unicons\TYT\SAY.png" />
     <Content Include="Web2\assets\img\icons\unicons\TYT\SÖZ.png" />
     <Content Include="Web2\assets\img\icons\unicons\TYT\tar.png" />
+    <Content Include="Web2\assets\img\icons\unicons\TYT\TARİH.png" />
     <Content Include="Web2\assets\img\icons\unicons\TYT\turkce.png" />
+    <Content Include="Web2\assets\img\icons\unicons\TYT\TÜRKÇE.png" />
+    <Content Include="Web2\assets\img\icons\unicons\TYT\yayın.png" />
     <Content Include="Web2\assets\img\icons\unicons\wallet-info.png" />
     <Content Include="Web2\assets\img\icons\unicons\wallet.png" />
     <Content Include="Web2\assets\img\illustrations\girl-doing-yoga-light.png" />
@@ -507,6 +515,14 @@
     <Content Include="Views\Deneme\AYTDenemeTasi.cshtml" />
     <Content Include="Views\istatistikler\Konularistatistigi.cshtml" />
     <Content Include="Views\istatistikler\TYTistatistigi.cshtml" />
+    <Content Include="Views\istatistikler\AYTistatistigi.cshtml" />
+    <Content Include="Views\istatistikler\TYTDenemeistatistigi.cshtml" />
+    <Content Include="Views\istatistikler\Denemeleristatistigi.cshtml" />
+    <Content Include="Views\istatistikler\TYTDenemeTablo1.cshtml" />
+    <Content Include="Views\istatistikler\TYTDenemeTablo2.cshtml" />
+    <Content Include="Views\istatistikler\AYTDenemeistatistigi.cshtml" />
+    <Content Include="Views\istatistikler\AYTDenemeTablo1.cshtml" />
+    <Content Include="Views\istatistikler\AYTDenemeTablo2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

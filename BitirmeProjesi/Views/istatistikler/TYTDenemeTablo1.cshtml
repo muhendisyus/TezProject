@@ -1,0 +1,43 @@
+﻿@using BitirmeProjesi.Models.Sınıflar
+@model List<TYTDeneme>
+
+<div style="margin-top:30px; margin-right:25px;margin-left:25px;margin-top:-10px;background-color:white;">
+  
+
+</div>
+<div style="margin-top:30px; margin-right:40PX;margin-left:40px;background-color:white;">
+    <table class="table" style="margin-top:30px; text-align:center;">
+        <thead class="table-light">
+            <tr>
+                <th>ID</th>
+                <th>Türkçe Net</th>
+                <th>Sosyal Net</th>
+                <th>Matematik Net</th>
+                <th>Fen Net</th>
+                <th>Toplam Net</th>
+                <th>Puan</th>
+                <th>Yayın</th>
+                <th>Tarih</th>
+            </tr>
+        </thead>
+        <tbody class="table-border-bottom-0">
+            @foreach (var x in Model)
+            {
+                <tr>
+                    <td>@x.ID</td>
+                    <td>@x.TurkNet</td>
+                    <td>@x.SosNet</td>
+                    <td>@x.MatNet</td>
+                    <td>@x.FenNet</td>
+                    <td>@x.TopNet</td>
+                    <td>@x.Puan</td>
+                    <td>@x.Yayın</td>
+                    <td>@x.Tarih</td>
+                </tr>
+            }
+
+       </tbody>
+    </table>
+
+</div>
+<br />
