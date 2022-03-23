@@ -14,7 +14,7 @@ namespace BitirmeProjesi.Controllers
         public ActionResult Index()
         {
             
-            return View(degerler);
+            return View();
         }
     }
 }
