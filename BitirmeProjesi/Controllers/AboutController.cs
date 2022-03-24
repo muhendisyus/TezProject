@@ -13,7 +13,7 @@ namespace BitirmeProjesi.Controllers
        
         public ActionResult Index()
         {
-            
+            /deneme1235
             return View();
         }
     }
