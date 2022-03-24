@@ -134,6 +134,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\DenemeController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\istatistiklerController.cs" />
     <Compile Include="Controllers\KonularController.cs" />
     <Compile Include="Global.asax.cs">
@@ -524,6 +525,7 @@
     <Content Include="Views\istatistikler\AYTDenemeistatistigi.cshtml" />
     <Content Include="Views\istatistikler\AYTDenemeTablo1.cshtml" />
     <Content Include="Views\istatistikler\AYTDenemeTablo2.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
