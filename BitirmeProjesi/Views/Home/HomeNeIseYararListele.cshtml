@@ -1,0 +1,50 @@
+﻿@using BitirmeProjesi.Models.Sınıflar
+@model List<HomeNeİseYarar>
+
+<section id="services" class="services">
+    <div class="container" data-aos="fade-up">
+        @foreach (var x in Model)
+        {
+        <div class="section-title">
+            <h2>@x.Baslik</h2>
+            <p>@x.Aciklama</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+                <div class="icon-box">
+                    <div class="icon"><i class="bx bx-spreadsheet"></i></div>
+                    <h4 class="title"><a href="">@x.Baslik1</a></h4>
+                    <p class="description">@x.Aciklama1</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+                <div class="icon-box">
+                    <div class="icon"><i class="bx bx-file"></i></div>
+                    <h4 class="title"><a href="">@x.Baslik2</a></h4>
+                    <p class="description">@x.Aciklama2</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon-box">
+                    <div class="icon"><i class="bx bx-stats"></i></div>
+                    <h4 class="title"><a href="">@x.Baslik3</a></h4>
+                    <p class="description">@x.Aciklama3</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon-box">
+                    <div class="icon"><i class="bx bx-message-square-edit
+"></i></div>
+                    <h4 class="title"><a href="">@x.Baslik4</a></h4>
+                    <p class="description">@x.Aciklama4</p>
+                </div>
+            </div>
+
+        </div>
+        }
+    </div>
+</section>

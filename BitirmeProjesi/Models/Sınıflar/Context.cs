@@ -31,5 +31,11 @@ namespace BitirmeProjesi.Models.Sınıflar
         public DbSet<AYTDeneme> aYTDenemes { get; set; }
         public DbSet<Admin> admins { get; set; }
         public DbSet<Ogrenciler> ogrencilers { get; set; }
+        public DbSet<HomeAnamenu> homeAnamenus { get; set; }
+        public DbSet<HomeHakkinda> homeHakkindas { get; set; }
+        public DbSet<HomeNeİseYarar> homeNeİseYarars { get; set; }
+        public DbSet<HomeSSS> homeSSSes { get; set; }
+        public DbSet<HomeİletisimBilgi> homeİletisimBilgis { get; set; }
+        public DbSet<Homeİletisim> homeİletisims { get; set; }
     }
 }
